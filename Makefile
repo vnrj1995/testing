@@ -20,7 +20,6 @@ install_dependency:
 		pip install requests-aws --no-cache-dir -t ./package/tmp/
 		
 copy_python_files:
-		cp *.* ./package/tmp/
 
 zip:
 		cd ./package/tmp && zip -r ../../$(PROJECT).zip * .[^.]*
